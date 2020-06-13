@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            }
+
+        a {
+            text-decoration: none;
+            }
+
+        ul {
+         list-style-type: none;
+            }
+
+        .clear:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            }
+        .big{
+            position: relative;
+            margin:0 auto;
+            width: 1500px;
+        }
+        .logo{
+            width: 1500px;
+            height: 43px;
+            
+            text-align: center;
+        }
+        .daohang{
+            width: 1500px;
+            height: 45px;
+        }
+        .daohang-first{
+            display: block;
+            width: 150px;
+            height: 45px;
+            float: left;
+            line-height: 45px;
+            margin-left: 270px;
+        }
+        .daohang-one{
+            display: block;
+            width: 130px;
+            height: 45px;
+            float: left;
+            line-height: 45px;
+        }
+        .ziti{
+            font-size:20px;
+            font-family:Microsoft YaHei;
+            font-weight:bold;
+            color: #808080;
+        }
+
+        .banner{
+            
+            margin: 0 auto;
+            width: 100%;
+            height: 448px;
+            background: url('banner.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .form{
+            margin-top: 11px;
+            margin-right: 40px;
+            float: right;
+
+        }
+        .search{
+            height: 20px;
+            float: left;
+            width: 240px;
+            border: 1px solid #008B8B;
+            background: url('QQ截图20200613111934.png');
+
+        }
+        .submit{
+            border: none;
+            width: 21px;
+            height: 22px;
+            background: #BFBFBF url('fa-search.png')  no-repeat center center;
+            float: right；
+        }
+        
+        .toumingtiao{
+        background-color:rgba(0, 0, 0, 0.4);
+        width: 1500px;
+        height: 110px;
+        position: absolute;
+        top: 381px;
+        }
+        .pone{
+            display: block;
+        }
+        .ptwo{
+            display: block;
+            position: absolute;
+            top: 28px;
+            left: 350px;
+        }
+        .waiguan-one{
+            
+            padding-top: 50px;
+            width: 1500px;
+            height: 130px;
+        }
+        .waiguan{
+            position: relative;
+            width: 1500px;
+            height: 411px;
+        }
+        .waiguantupian{
+            width: 800px;
+            height: 411px;
+        }
+        .waiguanwenzi{
+            background: url('wenzibeijing1.jpeg') no-repeat;
+            width: 700px;
+            height: 411px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        .neishi{
+            position: relative;
+            width: 1500px;
+            height: 411px;
+        }
+        .neishitupian{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            width: 800px;
+            height: 411px;
+        }
+        .neishiwenzi{
+            background: url('wenzibeijing2.jpg') no-repeat;
+            width: 700px;
+            height: 411px;
+
+        }
+        .xingneng{
+            position: relative;
+            width: 1500px;
+            height: 411px;
+        }
+        .xingnengtupian{
+            width: 800px;
+            height: 411px;
+        }
+        .xingnengwenzi{
+            background: url('wenzibeijing3.jpg') no-repeat;
+            width: 700px;
+            height: 411px;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+        .shengming{
+            width: 1500px;
+            height: 400px;
+            position: relative;
+
+        }
+        .dawenzi{
+            font-size:23px;
+            font-family:Microsoft YaHei;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+            line-height:21px;
+        }
+        .xiaowenzi{
+            font-size:18px;
+            font-family:SimSun;
+            font-weight:400;
+            color:rgba(51,51,51,1);
+            line-height:21px;
+        }
+        .goumaizhichi{
+            position: absolute;
+            top: 30px;
+            left: 250px;
+        }
+        .zaixianfuwu{
+            position: absolute;
+            top: 30px;
+            left: 550px;
+        }
+        .muhou{
+            position: absolute;
+            top: 30px;
+            right: 550px;
+
+        }
+        .gongsi{
+            position: absolute;
+            top: 30px;
+            right:250px;
+
+        }
+        .wenzihezi{
+            width: 700px;
+            height: 411px;
+            background:rgba(255,255,255,0.3);
+        }
+        .chatuwenzi-one{
+            display: block;
+            font-size: 23px;
+            line-height: 27px;
+            font-family: 微软雅黑;
+            margin-left: 30px;
+
+        }
+        .chatuwenzi-first{
+            display: block;
+            font-size: 23px;
+            line-height: 27px;
+            font-family: 微软雅黑;
+            margin-left: 30px;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="big">
+    <div class="logo"><img src="logo1.png"></div>
+
+    <div class="banner">
+        <ul class="clear">
+            <li class="daohang-first"><a href="" class="ziti">概览</a></li>
+            <li class="daohang-one"><a href="" class="ziti">外观</a></li>
+            <li class="daohang-one"><a href="" class="ziti">内饰</a></li>
+            <li class="daohang-one"><a href="" class="ziti">性能</a></li>
+            <li class="daohang-one"><a href="" class="ziti">价格</a></li>
+            <li class="daohang-one"><a href="" class="ziti">赏车</a></li>
+            <li>            <form class="form clear">
+                <input type="text" placeholder="输入关键词" class="search">
+                <input type="button" class="submit">
+            </form></li>
+            <li><div class="toumingtiao"><p style="color: #BFBFBF; margin-left: 20px; font-size: 42px;  padding-top: 25px;" class="pone">雷克萨斯LC500h</p><p style="color: #BFBFBF; font-size: 20px; margin-left: 20px;" class="ptwo">当想象成为现实，未来座驾由此诞生。LC高度还原概念车，令未来停驻眼前的同时，更融入岩层特有的自然灵感，黛青云母车漆，感受层峦叠嶂的壮丽，动静间，心生天地。</p></div></li>
+        </ul>
+    </div>
+    <div class="waiguan-one">
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 25px;">高度还原概念车，设计美似天成</p>
+        <p style="font-size: 10px;">&nbsp;</p>
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 16px;">昨天，设计是让你看见美</p>
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 16px;">今天，设计是带你预见美</p>
+    </div>
+    <div class="waiguan">
+        <div class="waiguantupian"><img src="waiguan.jpg"></div>
+        <div class="waiguanwenzi">
+            <div class="wenzihezi">           
+            <p class="chatuwenzi-first">雷克萨斯LC，如果有人认为你驾驶的是一辆概念车，也没错。高度还原概念车，让梦想照进现实。</p>
+            <p class="chatuwenzi-one">21英寸超大铝合金锻造轮毂*，尽显动感澎湃。</p>
+            <p class="chatuwenzi-one">超薄3眼LED远近光照明大灯带自动水平调节，实时保持出色照明状态。</p>
+            <p class="chatuwenzi-one">以战斗机引擎为灵感的后尾灯设计，锋芒毕现。</p>
+            <p class="chatuwenzi-one">刀锋式的C柱线条，彰显性感的流动身线。</p>
+            <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            <a href=""><p style="color: #F5F5F5; font-family: 黑体; font-size: 23px; padding-left: 550px;">探索外观></p></a>
+        </div>
+        </div>
+    </div>
+        <div class="waiguan-one">
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 25px;">不止驾驭，更愉悦每一个感官</p>
+        <p style="font-size: 10px;">&nbsp;</p>
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 16px;">昨天，豪华是物质极大丰富的产物</p>
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 16px;">今天，豪华不仅与物质有关，更与精神辉映</p>
+    </div>
+    <div class="neishi">
+        <div class="neishiwenzi">
+            <div class="wenzihezi">           
+            <p class="chatuwenzi-first">雷克萨斯LC，如果有人认为你驾驶的是一辆概念车，也没错。高度还原概念车，让梦想照进现实。</p>
+            <p class="chatuwenzi-one">21英寸超大铝合金锻造轮毂*，尽显动感澎湃。</p>
+            <p class="chatuwenzi-one">超薄3眼LED远近光照明大灯带自动水平调节，实时保持出色照明状态。</p>
+            <p class="chatuwenzi-one">以战斗机引擎为灵感的后尾灯设计，锋芒毕现。</p>
+            <p class="chatuwenzi-one">刀锋式的C柱线条，彰显性感的流动身线。</p>
+            <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            <a href=""><p style="color: #F5F5F5; font-family: 黑体; font-size: 23px; padding-left: 550px;">探索内饰></p></a></div></div>
+        <div class="neishitupian"><img src="neishi.jpg"></div>
+    </div>
+    <div class="waiguan-one">
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 25px;">重新定义全混动，重塑豪华GT轿跑的浪漫之旅</p>
+        <p style="font-size: 10px;">&nbsp;</p>
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 16px;">昨天，驾驶是把疾速当作规律</p>
+        <p style="color: black; font-family: Tahoma; text-align: center; font-size: 16px;">今天，驾驭是为疾速赋予韵律</p>
+    </div>
+    <div class="xingneng">
+        <div class="xingnengtupian"><img src="xingneng.jpg"></div>
+        <div class="xingnengwenzi">
+            <div class="wenzihezi">           
+            <p class="chatuwenzi-first">LC 500h搭载3.5升V6发动机的多级全混动系统，拥有更加澎湃的动力，拥有更直接、更迅速的动力响应。</p>
+            <p class="chatuwenzi-one">更轻薄、更强大的锂离子电池组，更小的体积，预留更宽敞舒适的空间。</p>
+            <p class="chatuwenzi-one">人工智能换挡控制带DMI（Driver's Mind Index）可根据测量横纵向加速度轨迹，让整个驾驭感受更加顺心应手。</p>
+            <p class="chatuwenzi-one">雷克萨斯动态操控系统LDH*，包含可变转向齿比VGRS和动态后轮转向系统DRS，尽享非凡驾驭感受。</p>
+            <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+            <a href=""><p style="color: #F5F5F5; font-family: 黑体; font-size: 23px; padding-left: 550px;">探索性能></p></a>
+            </div>
+        </div>
+    </div>
+    <div class="kongbai" style="padding-top: 100px;"></div>
+    <hr>
+    <div class="kongbai" style="padding-top: 50px;"></div>
+    <div class="shengming">
+        <div class="goumaizhichi">
+            <p class="dawenzi">购买支持</p>
+            <ul>
+                <li class="xiaowenzi">&nbsp;</li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">车型比较</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">搜索车型</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">查找经销商</a></li>
+            </ul>
+        </div>
+        <div class="zaixianfuwu">
+            <p class="dawenzi">在线服务</p>
+            <ul>
+                <li class="xiaowenzi" class="xiaowenzi">&nbsp;</li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">订阅</a></li>
+            </ul>
+        </div>
+        <div class="muhou">
+            <p class="dawenzi">幕后</p>
+            <ul>
+                <li class="xiaowenzi" class="xiaowenzi">&nbsp;</li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">活动</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">非凡座驾</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">非凡体验</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">参观博物馆</a></li>
+            </ul>
+        </div>
+        <div class="gongsi">
+            <p class="dawenzi">公司</p>
+            <ul>
+                <li class="xiaowenzi" class="xiaowenzi">&nbsp;</li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">新闻发布</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">工作机会</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">联系信息</a></li>
+                <li class="xiaowenzi"><a href="" class="xiaowenzi">杂志</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
